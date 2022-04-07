@@ -1,5 +1,7 @@
 body {
     font-family: 'Rubik', sans-serif;
+    padding: 0%;
+    margin: 0%;
 }
 
 .btn {
@@ -33,15 +35,19 @@ nav ul {
     padding: 10px;
 }
 
-.banner-section {
-    margin: 50px 10%;
 
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.services-section {
+    padding: 100px 20%;
+    background-color: #CAEAC7;
+
 
 }
 
+.banner-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px 10%;
+}
 
 .blank-button {
     border: 2px solid #4BA87D;
@@ -51,7 +57,7 @@ nav ul {
 
 .banner-text {
     display: flex;
-    justify-content: center;
+
     align-items: center;
 
 }
@@ -61,7 +67,7 @@ nav ul {
     border: 2px solid #4BA87D;
 }
 
-.banner-text h1 {
+.black-heading {
     font-size: 60px;
     margin: 10px;
     font-weight: 900;
@@ -70,4 +76,62 @@ nav ul {
 .banner-img {
     display: flex;
     align-items: center;
+}
+
+.reach-section {
+    background-color: #e6e0e0;
+    padding: 100px 15%;
+
+}
+
+.reach-content {
+    height: 600px;
+    background-image: url(images/image6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.reach-content h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.services {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.service {
+    box-shadow: 5px 5px 30px gray;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.service img {
+    width: 100%;
+    height: 320px;
+}
+
+.service-text {
+    padding: 20px;
+}
+
+.learn-text {
+    color: #0f9b0b;
+    font-size: 18px;
+    font-weight: 400;
 }
