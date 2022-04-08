@@ -27,6 +27,11 @@ nav ul {
 
 }
 
+.hamburger {
+    display: none;
+    margin-right: 5%;
+}
+
 .menu-bar li,
 .menu-bar button {
     border-bottom: 3px solid #4BA87D;
@@ -36,11 +41,15 @@ nav ul {
 }
 
 
-.services-section {
+.services-section,
+.customer-section {
     padding: 100px 20%;
+
+
+}
+
+.services-section {
     background-color: #CAEAC7;
-
-
 }
 
 .banner-section {
@@ -107,7 +116,8 @@ nav ul {
     text-align: center;
 }
 
-.services {
+.services,
+.customers {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -134,4 +144,140 @@ nav ul {
     color: #0f9b0b;
     font-size: 18px;
     font-weight: 400;
+}
+
+.customer {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.customer-section {
+    background-color: rgb(188, 219, 231);
+}
+
+.customer h1 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+.customer h4 {
+    margin: 3px;
+}
+
+.customer-one {
+    background-image: url(images/ashiq.jpg);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url(images/ashiq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customer-two {
+    background-image: url(images/sihad.jpg);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url(images/sihad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customer-three {
+    background-image: url(images/jabir.jpg);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5)), url(images/jabir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-header {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form input {
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 2px solid lightgray;
+    margin-right: 20px;
+}
+
+.contact-section {
+    margin: 50px 0px 100px 0px;
+}
+
+.get-started {
+    background-color: #4BA87D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    text-align: center;
+
+
+}
+
+.get-started h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+footer {
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+@media(max-width:1000px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .banner-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-img {
+        margin-top: 50px;
+    }
+
+    .banner-img img {
+        width: 70%;
+    }
+
+    .services,
+    .customers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width) {
+    .banner-img img {
+        width: 100%;
+    }
+
+    .black-heading {
+        font-size: 45px;
+    }
+}
+
+@media(max-width:400px) {
+    .try-now-btn {
+        margin-bottom: 20px;
+    }
 }
